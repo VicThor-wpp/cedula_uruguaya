@@ -8,7 +8,7 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     author='SoyVA3',
-    author_email='victor.aragon@vmlyr.com',
+    author_email='vic@knowmadinstitut.com',
     url='https://github.com/VicThor-wpp/cedula_uruguaya',
     license='MIT',
     classifiers=[
