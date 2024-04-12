@@ -1,3 +1,3 @@
-from .cedula_uruguaya_soyva3 import CedulaUruguaya
+from .cedula_uruguaya import CedulaUruguaya
 
 __all__ = ['CedulaUruguaya']
