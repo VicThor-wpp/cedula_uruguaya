@@ -7,9 +7,9 @@ setup(
     description='Gestión de cédulas uruguayas con validación de dígitos verificadores',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    author='Tu Nombre',
-    author_email='tu.email@example.com',
-    url='https://github.com/tu_usuario/cedula_uruguaya',
+    author='SoyVA3',
+    author_email='victor.aragon@vmlyr.com',
+    url='https://github.com/VicThor-wpp/cedula_uruguaya',
     license='MIT',
     classifiers=[
         "Programming Language :: Python :: 3",
