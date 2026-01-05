@@ -4,14 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cedula_uruguaya_soyva3"
-version = "0.1.0"
+version = "0.2.0"
 description = "Gestión de cédulas uruguayas con validación de dígitos verificadores"
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 readme = "README.md"
 authors = [
     { name = "SoyVA3", email = "vic@knowmadinstitut.com" }
 ]
-license.text = "MIT"
+license = { text = "MIT" }
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -19,11 +19,28 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/pypa/sampleproject"
+Homepage = "https://github.com/soyva3/cedula_uruguaya"
 
 [project.optional-dependencies]
-test = [
+dev = [
     "pytest",
-    "pytest-cov"
+    "pytest-cov",
+    "ruff",
+    "mypy"
 ]
 
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I"]
+ignore = []
+
+[tool.mypy]
+python_version = "3.9"
+strict = true
+ignore_missing_imports = true
